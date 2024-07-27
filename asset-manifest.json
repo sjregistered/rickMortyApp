@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rickMortyApp/static/css/main.e6c13ad2.css",
-    "main.js": "/rickMortyApp/static/js/main.65e85d86.js",
+    "main.js": "/rickMortyApp/static/js/main.ca02fce6.js",
     "static/js/453.a808e146.chunk.js": "/rickMortyApp/static/js/453.a808e146.chunk.js",
     "index.html": "/rickMortyApp/index.html",
     "main.e6c13ad2.css.map": "/rickMortyApp/static/css/main.e6c13ad2.css.map",
-    "main.65e85d86.js.map": "/rickMortyApp/static/js/main.65e85d86.js.map",
+    "main.ca02fce6.js.map": "/rickMortyApp/static/js/main.ca02fce6.js.map",
     "453.a808e146.chunk.js.map": "/rickMortyApp/static/js/453.a808e146.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.65e85d86.js"
+    "static/js/main.ca02fce6.js"
   ]
 }
