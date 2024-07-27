@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Getting Started with Rick & Morty App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with Create React App.
+(https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -14,10 +15,26 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### `npm run test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
+
+### Creating Test Files
+
+Test files can be created in the src/test
+directory. The naming convention for test files should follow the pattern: ComponentName.test.tsx.
+
+-------------------------------------------------------
+import React from 'react';
+import { render } from '@testing-library/react';
+import ExampleComponent from '../components/ExampleComponent';
+
+test('renders ExampleComponent', () => {
+  const { getByText } = render(<ExampleComponent />);
+  const linkElement = getByText(/example/i);
+  expect(linkElement).toBeInTheDocument();
+});
+-------------------------------------------------------
 
 ### `npm run build`
 
@@ -29,18 +46,40 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `npm run deploy`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Deploys the project in the git hub pages of the same repository. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Project Architecure 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The project follows a standard React architecture with a few customizations for better organization and scalability:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+=> src/components: Contains reusable UI components.
+=>  src/pages: Contains different pages/screens of the application.
+=> src/services: Contains API service files for fetching data.
+=> src/interfaces: Contains TypeScript interfaces for defining data structures.
+=> src/styledComponents: Contains styled components for consistent styling across the app.
+=> src/custom_hooks: Contains custom React hooks.
+=> src/tests: Contains test files for various components and pages.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Application Overview
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This application is a Rick and Morty character and episode explorer. Users can search for characters, view their details, and explore the episodes they appear in. Similarly, users can search for locations and view details about them.
+
+
+# Features
+
+=> Character Search: Search for characters by name and filter by status.
+=> Character Details: View detailed information about a character, including origin, current location, and => episodes they appear in.
+=> Location Search: Search for locations by name and filter by type.
+=> Location Details: View detailed information about a location, including residents.
+
+# Hosting
+This application is hosted on GitHub Pages. You can view the live application at:
+
+==>> https://sjregistered.github.io/rickMortyApp
+
+
+
+
